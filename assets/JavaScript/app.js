@@ -1,6 +1,6 @@
 
 // Initial array of games
-var games = ["OVERWATCH", "LEAGUE OF LEGENDS", "THE LEGEND OF ZELDA"];
+var games = ["OVERWATCH", "LEAGUE OF LEGENDS", "OCARINA OF TIME"];
 
 // displayGameInfo function re-renders the HTML to display the appropriate content
 function displayGameInfo() {

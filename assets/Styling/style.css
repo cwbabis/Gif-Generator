@@ -14,6 +14,12 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
 p {
     color: white;
     border: 5px solid rgba(0, 0, 0, 0.5);
@@ -36,6 +42,9 @@ p {
     text-align: center;
 }
 
+.form-center{
+    justify-content: center;
+}
 /* .stretch-to-bottom{
     height:90%;
 } */
