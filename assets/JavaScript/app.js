@@ -1,6 +1,6 @@
 
       // Initial array of games
-      var games = ["Overwatch", "League of Legends", "Halo", "Minecraft"];
+      var games = ["OVERWATCH", "LEAGUE OF LEGENDS", "MINECRAFT"];
 
       // displayGameInfo function re-renders the HTML to display the appropriate content
       function displayGameInfo() {
@@ -54,7 +54,7 @@
       function renderButtons() {
         $("#buttons-view").empty();
         for (var i = 0; i < games.length; i++) {
-          var a = $("<button>");
+          var a = $("<button type='button' class='btn btn-warning'>Primary</button>");
           a.addClass("game-btn");
           a.attr("data-name", games[i]);
           a.text(games[i]);
@@ -63,7 +63,9 @@
       }
       $("#add-game").on("click", function (event) {
         event.preventDefault();
-        var game = $("#game-input").val().trim();
+        var game = $("#game-input").val().trim().toUpperCase();
+        console.log(game)
+
         games.push(game);
         renderButtons();
       });
