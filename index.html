@@ -7,28 +7,73 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/Styling/style.css">.
+  <link rel="stylesheet" type="text/css" href="./assets/Styling/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 
-  </head>
+</head>
 
 <body>
-  
+
+  <div class="jumbotron see-through">
+    <h1 class="display-4">Game Gif Generator!</h1>
+  </div>
+  <!-- Rendered Buttons will get Dumped Here  -->
   <div class="container">
+    <div class="jumbotron see-through stretch-to-bottom">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="buttons-view"></div>
+        </div>
 
-    <!-- Rendered Buttons will get Dumped Here  -->
-    <div id="buttons-view"></div>
 
-    <form id="games-form">
-      <label for="game-input">ADD YOUR FAVORITE GAME!</label>
-      <input type="text" id="game-input">
-      <br>
-      <!-- Button triggers new movie to be added -->
-      <input id="add-game" class="btn btn-outline-success"  type="submit" value="GO!">
 
-    </form>
 
-    <!-- Movies will Get Dumped Here -->
-    <div id="games-view"></div>
+        <!-- Search for game gifs here-->
+
+        <div class="row">
+          <div class="col-md-6">
+            <form id="games-form">
+              <label class="game-form-text" for="game-input">ADD YOUR FAVORITE GAME!</label>
+              <input type="text" id="game-input">
+              <br>
+              <!-- Button triggers new movie to be added -->
+              <input id="add-game" class="btn btn-outline-success" type="submit" value="GO!">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Games will Get Dumped Here -->
+    <div class="jumbotron see-through">
+      <div id="games-view"></div>
+    </div>
+
+
+
+
+    <nav style="background-color: rgba(0, 0, 0, 0.3);" class="navbar fixed-bottom navbar-dark">
+      <div class="container" id=bottomIcons>
+
+        <a class="navbar-brand" href="#"></a>
+        <span>
+          <a href="https://www.linkedin.com/in/christopher-babis-332a12178/"><i class="fab fa-linkedin fa-2x"
+              style="color:white"></i></a>
+        </span>
+        <span>
+          <a href="https://www.facebook.com/ChrisBabis"><i class="fab fa-facebook fa-2x" style="color:white"></i></a>
+        </span>
+        <span>
+          <a href="https://github.com/cwbabis"><i class="fab fa-github-square fa-2x" style="color:white"></i></a>
+        </span>
+        <span>
+          <a href="https://stackoverflow.com/users/10891839/cwbabis?tab=profile"><i class="fab fa-stack-overflow fa-2x"
+              style="color:white"></i></a>
+        </span>
+    </nav>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -41,6 +86,7 @@
     <script type="text/javascript" src="./assets/JavaScript/app.js">
     </script>
   </div>
+  <br><br>
 </body>
 
 </html>

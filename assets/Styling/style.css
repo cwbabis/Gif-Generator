@@ -1,4 +1,45 @@
-body{
-    background-image: url(/assets/Images/pink.png);
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(../Images/zelda.png);
     background-repeat: repeat;
+}
+
+.btn {
+    margin: 10px;
+}
+
+h1 {
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    color: white;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    margin: auto;
+    padding: 0px;
+    width: 356px;
+    align-items: center;
+    text-align: center;
+}
+
+.game-form-text {
+    color: white;
+}
+
+.see-through {
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    text-align: center;
+}
+
+/* .stretch-to-bottom{
+    height:90%;
+} */
+
+#bottomIcons {
+    width: 182px;
 }
