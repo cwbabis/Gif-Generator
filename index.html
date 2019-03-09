@@ -3,50 +3,40 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Gaming Buttons</title>
+  <title>Your Favorite Game</title>
+  <style type="text/css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Search Bar for Gifs -->
 
+  <div class="container">
 
-  <form id="game-form">
-    <label for="game-input">Add Your Favorite Game!</label>
-    <input type="text" id="game-input"><br>
+    <!-- Rendered Buttons will get Dumped Here  -->
+    <div id="buttons-view"></div>
 
-    <!-- Button triggers new movie to be added -->
-    <input id="add-game" type="submit" value="Go!">
-  </form>
+    <form id="games-form">
+      <label for="game-input">Add Your Favorite Game</label>
+      <input type="text" id="game-input">
+      <br>
+      <!-- Button triggers new movie to be added -->
+      <input id="add-game" type="submit" value="Go!">
+      
+    </form>
 
-  <!-- Where all my premade buttons will go-->
-  <div id="buttons-div"></div>
+    <!-- Movies will Get Dumped Here -->
+    <div id="games-view"></div>
 
-  
-    <button data-game="Terraria">
-      Terraria
-    </button>
-    <button data-game="Fortnite">
-      Fortnite
-    </button>
-    <button data-game="League">
-      League of Legends
-    </button>
-    <button data-game="Overwatch">
-      Overwatch
-    </button>
-    <button data-game="Master-Chief">
-      Halo
-    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/JavaScript/app.js">
+    </script>
   </div>
-  <div id="where-gifs-appear">
-  
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <script type="text/javascript" src="./assets/JavaScript/app.js">
-
-  </script>
 </body>
 
 </html>
