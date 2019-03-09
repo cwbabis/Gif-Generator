@@ -7,24 +7,43 @@
 </head>
 
 <body>
-  <!-- Where all my premade buttons will go-->
-  <button data-game="Overwatch">
-    Overwatch
-  </button>
-  <button data-game="Hearthstone">
-    Hearthstone
-  </button>
-  <button data-game="League of Legends">
-    League of Legends
-  </button>
-  <div id="where-gifs-appear">
-  </div>
   <!-- Search Bar for Gifs -->
-  <!-- <input id="searchtext" type="text" placeholder="Search..">
-  <button id="searchgifs" type="submit" onclick="getData()">Text</button> -->
+
+
+  <form id="game-form">
+    <label for="game-input">Add Your Favorite Game!</label>
+    <input type="text" id="game-input"><br>
+
+    <!-- Button triggers new movie to be added -->
+    <input id="add-game" type="submit" value="Go!">
+  </form>
+
+  <!-- Where all my premade buttons will go-->
+  <div id="buttons-div"></div>
+
+  
+    <button data-game="Terraria">
+      Terraria
+    </button>
+    <button data-game="Fortnite">
+      Fortnite
+    </button>
+    <button data-game="League">
+      League of Legends
+    </button>
+    <button data-game="Overwatch">
+      Overwatch
+    </button>
+    <button data-game="Master-Chief">
+      Halo
+    </button>
+  </div>
+  <div id="where-gifs-appear">
+  
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+
   <script type="text/javascript" src="./assets/JavaScript/app.js">
 
   </script>
