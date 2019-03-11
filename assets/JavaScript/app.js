@@ -1,6 +1,5 @@
-
 // Initial array of games
-var games = ["OVERWATCH", "LEAGUE OF LEGENDS", "OCARINA OF TIME"];
+var games = ["UNDERTALE", "OVERWATCH", "LEAGUE OF LEGENDS", "OCARINA OF TIME", "MEGAMAN"];
 
 // displayGameInfo function re-renders the HTML to display the appropriate content
 function displayGameInfo() {
@@ -20,19 +19,16 @@ function displayGameInfo() {
       if (results[i].rating !== "r" /* && results[i].rating !== "pg-13" */) {
         var gifDiv = $("<div>");
         var rating = results[i].rating;
-
         var p = $("<p>").text("Rating: " + rating);
         var gameImage = $("<img>");
 
         gameImage.attr("src", results[i].images.fixed_height_still.url); gifDiv.append(p);
         gameImage.attr("data-state", "still");
         gameImage.attr("data-still", results[i].images.fixed_height_still.url);
-        gameImage.attr("data-animate", results[i].images.fixed_height.url);
-
+        gameImage.attr("data-animate", results[i].images.fixed_height.url);;
         gameImage.addClass("gif");
 
         gifDiv.append(gameImage);
-
         $("#games-view").prepend(gifDiv);
       }
     }
@@ -70,5 +66,7 @@ $("#add-game").on("click", function (event) {
   games.push(game);
   renderButtons();
 });
+
 $(document).on("click", ".game-btn", displayGameInfo);
 renderButtons();
+
