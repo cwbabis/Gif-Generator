@@ -22,6 +22,7 @@ https://cwbabis.github.io/Gif-Generator/
 * jQuery
 
 Here's a preview of the generator:
+
 ![](generator.gif "gif")
 
 permalink: /index.html
