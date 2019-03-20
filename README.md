@@ -21,9 +21,7 @@ https://cwbabis.github.io/Gif-Generator/
 * Bootstrap
 * jQuery
 
-Here's a preview of the game:
-
-![](assets/images/gamepreview.gif "gif")
-* FIX LINK *
+Here's a preview of the generator:
+![](generator.gif "gif")
 
 permalink: /index.html
